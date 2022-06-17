@@ -1,0 +1,58 @@
+*
+  margin: 0px
+  padding: 0px
+  box-sizing: border-box
+
+body
+  background: #222
+  font-family: "Raleway",sans-serif
+
+.header
+  width: 100%
+  padding: 20px
+  display: flex
+  justify-content: center
+  div
+    border: 3px solid #aaa
+    input
+      padding: 10px
+      width: 400px
+      border: none
+      outline: none
+    button
+      height: 100%
+      border-radius: 0px
+      border: none
+      padding: 0px 10px
+      background: #00acee
+      color: #f5f5f5
+      font-weight: 600
+      cursor: pointer
+
+.result
+  padding: 20px
+  .list
+    display: flex
+    flex-wrap: wrap
+    .item
+      margin: 10px
+      height: 210px
+      border: 5px solid #aaa
+      img
+        width: 100%
+
+.loading
+  display: flex
+  justify-content: center
+  .loader
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    border: 5px solid #fff
+    border-top: 5px solid #111
+    transform: rotate(0deg)
+    animation: loading 500ms ease-in-out infinite
+
+@keyframes loading
+  to
+    transform: rotate(360deg)
