@@ -47,7 +47,7 @@ const SearchGiphy = () => {
       <div className='result'>
         {loadingState ? (
           <div className='loading'>
-            <div className='loader'></div>
+            {/* <div className='loader'></div> */}
           </div>
         ) : (
           <div className='list'>
